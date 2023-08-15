@@ -1,0 +1,4 @@
+com/tecnotab/currencycalculation/facade/CurrencyExchangeProxy.class
+com/tecnotab/currencycalculation/model/CalculatedAmount.class
+com/tecnotab/currencycalculation/CurrencyCalculationServiceApplication.class
+com/tecnotab/currencycalculation/controller/CurrencyCalculationController.class
