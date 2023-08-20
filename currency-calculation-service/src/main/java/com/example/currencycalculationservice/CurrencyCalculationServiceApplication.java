@@ -1,13 +1,13 @@
-package com.tecnotab.currencyexchange;
+package com.example.currencycalculationservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CurrencyExchangeServiceApplication {
+public class CurrencyCalculationServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CurrencyExchangeServiceApplication.class, args);
+		SpringApplication.run(CurrencyCalculationServiceApplication.class, args);
 	}
 
 }
