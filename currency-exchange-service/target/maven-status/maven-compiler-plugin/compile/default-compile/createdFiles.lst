@@ -1,6 +1,3 @@
-com/tecnotab/.DS_Store
 com/tecnotab/currencyexchange/model/ExchangeValue.class
-.DS_Store
-com/.DS_Store
 com/tecnotab/currencyexchange/CurrencyExchangeServiceApplication.class
 com/tecnotab/currencyexchange/controller/CurrencyExchangeController.class
