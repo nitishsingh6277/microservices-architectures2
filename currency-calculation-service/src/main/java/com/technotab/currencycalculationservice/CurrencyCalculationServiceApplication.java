@@ -1,4 +1,4 @@
-package com.example.currencycalculationservice;
+package com.technotab.currencycalculationservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
