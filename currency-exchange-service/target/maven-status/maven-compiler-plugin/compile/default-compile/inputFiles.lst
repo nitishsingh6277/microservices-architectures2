@@ -1,4 +1,3 @@
 /Users/newton/Downloads/microservices-architectures2/currency-exchange-service/src/main/java/com/tecnotab/currencyexchange/CurrencyExchangeServiceApplication.java
 /Users/newton/Downloads/microservices-architectures2/currency-exchange-service/src/main/java/com/tecnotab/currencyexchange/model/ExchangeValue.java
-/Users/newton/Downloads/microservices-architectures2/currency-exchange-service/src/main/java/com/tecnotab/currencyexchange/repository/ExchangeValueRepository.java
 /Users/newton/Downloads/microservices-architectures2/currency-exchange-service/src/main/java/com/tecnotab/currencyexchange/controller/CurrencyExchangeController.java
