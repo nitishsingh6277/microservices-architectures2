@@ -18,8 +18,8 @@ import com.technotab.currencycalculationservice.model.CalculatedAmount;
 @RestController
 public class CurrencyCalculationController {
     
-@Autowired    
-CurrencyExchangeProxy proxy;
+@Autowired   
+private CurrencyExchangeProxy proxy;
 
 @GetMapping("/currency-converter/from/{from}/to/{to}/quantity/{quantity}")
 public CalculatedAmount CalculatedAmount(@PathVariable String from, @PathVariable String to, @PathVariable BigDecimal quantity) {

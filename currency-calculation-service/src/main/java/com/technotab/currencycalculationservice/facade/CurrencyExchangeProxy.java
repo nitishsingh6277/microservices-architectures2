@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import com.technotab.currencycalculationservice.model.CalculatedAmount;
 
 
-@FeignClient(name = "currency-exchange-service", url = "http://localhost:8000/")
+@FeignClient(name = "currency-exchange-service", url = "http://localhost:8000")
 public interface CurrencyExchangeProxy {
 
         @GetMapping("/currency-exchange/from/{from}/to/{to}")
