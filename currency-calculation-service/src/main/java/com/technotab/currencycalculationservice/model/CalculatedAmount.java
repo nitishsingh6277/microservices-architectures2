@@ -7,7 +7,7 @@ public class CalculatedAmount {
    private long id;
    private String from;
    private String to;
-   private BigDecimal multiplicationFactor;
+   private BigDecimal conversionMultiple;
    private BigDecimal quantity;
    private BigDecimal totalCalculatedAmount;
    private int port;
@@ -18,12 +18,12 @@ public class CalculatedAmount {
    }
 
 
-public CalculatedAmount(long id, String from, String to, BigDecimal multiplicationFactor, BigDecimal quantity,
+public CalculatedAmount(long id, String from, String to, BigDecimal conversionMultiple, BigDecimal quantity,
         BigDecimal totalCalculatedAmount, int port) {
     this.id = id;
     this.from = from;
     this.to = to;
-    this.multiplicationFactor = multiplicationFactor;
+    this.conversionMultiple = conversionMultiple;
     this.quantity = quantity;
     this.totalCalculatedAmount = totalCalculatedAmount;
     this.port = port;
@@ -53,12 +53,12 @@ public CalculatedAmount(long id, String from, String to, BigDecimal multiplicati
         this.to = to;
     }
 
-    public BigDecimal getMultiplicationFactor() {
-        return this.multiplicationFactor;
+    public BigDecimal getConversionMultiple() {
+        return this.conversionMultiple;
     }
 
-    public void setMultiplicationFactor(BigDecimal multiplicationFactor) {
-        this.multiplicationFactor = multiplicationFactor;
+    public void setConversionMultiple(BigDecimal multiplicationFactor) {
+        this.conversionMultiple = multiplicationFactor;
     }
 
     public BigDecimal getQuantity() {
@@ -101,7 +101,7 @@ public CalculatedAmount(long id, String from, String to, BigDecimal multiplicati
     }
 
     public CalculatedAmount multiplicationFactor(BigDecimal multiplicationFactor) {
-        setMultiplicationFactor(multiplicationFactor);
+        setConversionMultiple(multiplicationFactor);
         return this;
     }
 
@@ -128,12 +128,12 @@ public CalculatedAmount(long id, String from, String to, BigDecimal multiplicati
             return false;
         }
         CalculatedAmount calculatedAmount = (CalculatedAmount) o;
-        return id == calculatedAmount.id && Objects.equals(from, calculatedAmount.from) && Objects.equals(to, calculatedAmount.to) && Objects.equals(multiplicationFactor, calculatedAmount.multiplicationFactor) && Objects.equals(quantity, calculatedAmount.quantity) && Objects.equals(totalCalculatedAmount, calculatedAmount.totalCalculatedAmount) && port == calculatedAmount.port;
+        return id == calculatedAmount.id && Objects.equals(from, calculatedAmount.from) && Objects.equals(to, calculatedAmount.to) && Objects.equals(conversionMultiple, calculatedAmount.conversionMultiple) && Objects.equals(quantity, calculatedAmount.quantity) && Objects.equals(totalCalculatedAmount, calculatedAmount.totalCalculatedAmount) && port == calculatedAmount.port;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, from, to, multiplicationFactor, quantity, totalCalculatedAmount, port);
+        return Objects.hash(id, from, to, conversionMultiple, quantity, totalCalculatedAmount, port);
     }
 
     @Override
@@ -142,7 +142,7 @@ public CalculatedAmount(long id, String from, String to, BigDecimal multiplicati
             " id='" + getId() + "'" +
             ", from='" + getFrom() + "'" +
             ", to='" + getTo() + "'" +
-            ", multiplicationFactor='" + getMultiplicationFactor() + "'" +
+            ", multiplicationFactor='" + getConversionMultiple() + "'" +
             ", quantity='" + getQuantity() + "'" +
             ", totalCalculatedAmount='" + getTotalCalculatedAmount() + "'" +
             ", port='" + getPort() + "'" +
