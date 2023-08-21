@@ -1,3 +1,4 @@
 com/tecnotab/currencyexchange/model/ExchangeValue.class
 com/tecnotab/currencyexchange/CurrencyExchangeServiceApplication.class
 com/tecnotab/currencyexchange/controller/CurrencyExchangeController.class
+com/tecnotab/currencyexchange/repository/ExchangeValueRepository.class
