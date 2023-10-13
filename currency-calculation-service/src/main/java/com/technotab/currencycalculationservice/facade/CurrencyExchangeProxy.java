@@ -9,11 +9,13 @@ import com.technotab.currencycalculationservice.model.CalculatedAmount;
 
 
 // @FeignClient(name = "currency-exchange-service", url = "http://localhost:8000")
-@FeignClient(name = "currency-exchange-service")
+//@FeignClient(name = "currency-exchange-service")
+@FeignClient(name = "netflix-zuul-api-gateway-server")
 @RibbonClient(name = "currency-exchange-service")
 public interface CurrencyExchangeProxy {
 
-        @GetMapping("/currency-exchange/from/{from}/to/{to}")
+        //@GetMapping("/currency-exchange/from/{from}/to/{to}")
+        @GetMapping("/currency-exchange-service/currency-exchange/from/{from}/to/{to}")
     	public CalculatedAmount retrieveExchangeValue(@PathVariable("from") String from, @PathVariable("to") String to);
 
     
