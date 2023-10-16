@@ -1,1 +1,1 @@
-package com.tecnotab.currencyexchange;
+package com.newton.currencyexchange;
