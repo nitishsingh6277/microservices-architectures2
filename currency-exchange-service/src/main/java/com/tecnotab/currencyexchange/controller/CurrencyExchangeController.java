@@ -11,6 +11,7 @@ import com.tecnotab.currencyexchange.repository.ExchangeValueRepository;
 
 @RestController
 public class CurrencyExchangeController {
+	//Logger logger = LoggerFactory.getLogger(CurrencyExchangeController.class);
 
 	@Autowired
 	private Environment environment;
@@ -22,6 +23,7 @@ public class CurrencyExchangeController {
 	public ExchangeValue retrieveExchangeValue(@PathVariable String from, @PathVariable String to) {
 		
 		ExchangeValue exchangeValue = repository.findByFromAndTo(from, to);
+		//logger.info("here is the msg{}", exchangeValue);
 		System.out.println(exchangeValue.getId());
 		exchangeValue.setPort(Integer.parseInt(environment.getProperty("local.server.port")));
 		return exchangeValue;
